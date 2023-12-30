@@ -1,0 +1,43 @@
+<!-- res/layout/item_product.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- ImageView để hiển thị hình ảnh sản phẩm -->
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ca_chua"/> <!-- Thay thế bằng hình ảnh mặc định hoặc thương hiệu -->
+
+    <!-- LinearLayout chứa thông tin về sản phẩm -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <!-- TextView để hiển thị tên sản phẩm -->
+        <TextView
+            android:id="@+id/textViewProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- TextView để hiển thị giá sản phẩm -->
+        <TextView
+            android:id="@+id/textViewProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá sản phẩm"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>
